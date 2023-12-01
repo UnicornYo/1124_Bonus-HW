@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 統營招工表單 - 第一頁</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #main-container {
+      width: 60%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #main-container img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .label-container {
+      margin-right: 15px;
+      margin-left: 15px;
+      width: 100px;
+      float: left;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      width: 80%;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 87.5%; 
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 10px;
+      float: left;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+
+    #student-id {
+      margin-right: 20px;
+    }
+
+    .grade-options {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      
+    }
+
+    .grade-option {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+    }
+
+    .grade-option input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-container">
+    <img src="./picture/0.png" alt="Main Image">
+    <div class="title">2024 統營招工表單！</div>
+
+    <div class="form-group">
+      <label for="name" class="label-container">姓名：</label>
+      <input type="text" id="name" name="name">
+      
+      <label id="student-id-label" for="student-id" class="label-container">學號：</label>
+      <input type="text" id="student-id" name="student-id">
+    </div>
+
+    <div class="form-group">
+      <label class="label-container">年級：</label>
+      <div class="grade-options">
+        <div class="grade-option">
+          <input type="radio" id="freshman" name="grade" value="freshman">
+          <label for="freshman">大</label>
+          <label for="freshman">一</label>
+        </div>
+        
+        <div class="grade-option">
+          <input type="radio" id="sophomore" name="grade" value="sophomore">
+          <label for="sophomore">大</label>
+          <label for="sophomore">二</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="label-container">常用信箱：</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <button onclick="window.location.href='page2.html'">下一頁</button>
+  </div>
+</body>
+</html>

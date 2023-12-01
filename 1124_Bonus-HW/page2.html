@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 統營招工表單 - 第二頁</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #main-container {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group1 {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group2 {
+      margin-bottom: 15px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center; 
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      margin-right: 5%;
+    }
+
+    .checkbox-group {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 50%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      float: right;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button:last-child {
+      margin-right: 0;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+      resize: none; 
+    }
+
+    select {
+      width: 50%; 
+      font-size: 24px;
+    }
+
+    .form-group-bold {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .radio-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    hr {
+      margin: 20px 0; 
+      border: 1px solid #ddd; 
+    }
+  </style>
+</head>
+<body>
+  <div id="main-container">
+    <div class="title">招工區塊＿各組意願與自我推薦</div>
+
+    <div class="form-group1">
+      <label>各組說明：</label>
+      <div class="checkbox-group">
+        <img src="./picture/1.png" alt="Image 1">
+        <img src="./picture/2.png" alt="Image 2">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>組員意願：</label>
+      <input type="checkbox" id="team1" name="team1" value="team1">
+      <label for="team1">隊輔組員</label>
+
+      <input type="checkbox" id="team2" name="team2" value="team2">
+      <label for="team2">課程組員</label>
+
+      <input type="checkbox" id="team3" name="team3" value="team3">
+      <label for="team3">活動組員</label>
+
+      <input type="checkbox" id="team4" name="team4" value="team4">
+      <label for="team4">美宣組員</label>
+    </div>
+
+    <div class="form-group">
+      <label>組頭意願：</label>
+      <input type="checkbox" id="head1" name="head1" value="head1">
+      <label for="head1">場器組頭</label>
+
+      <input type="checkbox" id="head2" name="head2" value="head2">
+      <label for="head2">生活組頭</label>
+
+      <input type="checkbox" id="head3" name="head3" value="head3">
+      <label for="head3">公關組頭</label>
+
+      <input type="checkbox" id="head4" name="head4" value="head4">
+      <label for="head4">美宣組頭</label>
+    </div>
+
+    <hr>
+    <div class="form-group-bold">
+      <label for="experience">請在下面回答欄中，說明你曾參加或籌備過的活動的經驗、個人特質、或和該職位相關的經歷，</label>
+      <label for="experience">幫助我們更加認識你！(aka 提升錄取機率唷！）</label>
+    </div>
+
+    <div class="form-group2">
+      <label for="preferred-team">請針對你最想參與的組別，和我們分享相關的經驗！</label>
+      <select id="preferred-team" name="preferred-team">
+        <option value="team1">隊輔組</option>
+        <option value="team2">活動組</option>
+        <option value="team3">課程組</option>
+        <option value="team4">公關組</option>
+        <option value="team5">美宣組</option>
+        <option value="team6">場器組</option>
+        <option value="team7">生活組</option>
+      </select>
+    </div>
+
+    <div class="form-group1">
+      <label for="team-experience">關於上述選擇的組別，你有什麼相關的經驗或特質嗎？</label>
+      <textarea id="team-experience" name="team-experience" rows="4"></textarea>
+    </div>
+
+    <hr>
+    <div class="form-group-bold">
+      <label for="experience">另外，我們還有一個橫跨整個營隊的小組——晚會組：</label>
+      <label for="experience">如果你願意參加晚會組，我們將提供你優先錄取的福利！但也不用擔心不參加晚會，就不會被錄取唷！</label>
+      <label for="experience">（這裡只是做簡單的小調查，成功錄取工人後會再進行分組。）</label>
+    </div>
+
+    <div class="form-group">
+      <label for="evening-team">晚會組參加意願：</label>
+      <div class="radio-group">
+        <input type="radio" id="yes" name="evening-team" value="yes">
+        <label for="yes">願</label>
+        <label for="yes">意</label>
+        <input type="radio" id="no" name="evening-team" value="no">
+        <label for="no">不</label>
+        <label for="no">願</label>
+        <label for="no">意</label>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button onclick="window.location.href='page1.html'">返回</button>
+      <button onclick="window.location.href='page3.html'">下一頁</button>
+    </div>
+  </div>
+</body>
+</html>

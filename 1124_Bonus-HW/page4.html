@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 統營招工表單 - 第四頁</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #main-container {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center; 
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button:last-child {
+      margin-right: 0;
+    }   
+
+  </style>
+</head>
+<body>
+  <div id="main-container">
+    <div class="title">最後確認＿填答內容</div>
+
+    <div class="form-group">
+      <p>請確認你過去三頁的內容是否填答完成，下一頁即提交表單！</p>
+    </div>
+
+    <div class="form-group">
+      <label for="additional-comments">除了表單所述的部分，還有其他想補充的嗎？</label>
+      <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="theme-suggestion">最後的最後！如果可以，請幫我們為這次統計營想一個主題名字！</label>
+      <input type="text" id="theme-suggestion" name="theme-suggestion">
+    </div>
+
+    <div class="button-group">
+      <button onclick="window.location.href='page3.html'">返回</button>
+      <button onclick="window.location.href='page5.html'">提交表單</button>
+    </div>
+  </div>
+</body>
+</html>
